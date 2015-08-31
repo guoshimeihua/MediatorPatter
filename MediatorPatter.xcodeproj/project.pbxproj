@@ -14,6 +14,11 @@
 		32186D3D1B948D3700D99CF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32186D3C1B948D3700D99CF3 /* Images.xcassets */; };
 		32186D401B948D3700D99CF3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32186D3E1B948D3700D99CF3 /* LaunchScreen.xib */; };
 		32186D4C1B948D3700D99CF3 /* MediatorPatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32186D4B1B948D3700D99CF3 /* MediatorPatterTests.m */; };
+		32186D5E1B948EF200D99CF3 /* AbstractRadarMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32186D5D1B948EF200D99CF3 /* AbstractRadarMediator.m */; };
+		32186D611B948F1200D99CF3 /* ConcreteRadarMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32186D601B948F1200D99CF3 /* ConcreteRadarMediator.m */; };
+		32186D641B948F2700D99CF3 /* Plane.m in Sources */ = {isa = PBXBuildFile; fileRef = 32186D631B948F2700D99CF3 /* Plane.m */; };
+		32186D671B948F3A00D99CF3 /* PlaneA.m in Sources */ = {isa = PBXBuildFile; fileRef = 32186D661B948F3A00D99CF3 /* PlaneA.m */; };
+		32186D6A1B948F4A00D99CF3 /* PlaneB.m in Sources */ = {isa = PBXBuildFile; fileRef = 32186D691B948F4A00D99CF3 /* PlaneB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,16 @@
 		32186D451B948D3700D99CF3 /* MediatorPatterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorPatterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32186D4A1B948D3700D99CF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32186D4B1B948D3700D99CF3 /* MediatorPatterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorPatterTests.m; sourceTree = "<group>"; };
+		32186D5C1B948EF200D99CF3 /* AbstractRadarMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractRadarMediator.h; sourceTree = "<group>"; };
+		32186D5D1B948EF200D99CF3 /* AbstractRadarMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractRadarMediator.m; sourceTree = "<group>"; };
+		32186D5F1B948F1200D99CF3 /* ConcreteRadarMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteRadarMediator.h; sourceTree = "<group>"; };
+		32186D601B948F1200D99CF3 /* ConcreteRadarMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteRadarMediator.m; sourceTree = "<group>"; };
+		32186D621B948F2700D99CF3 /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
+		32186D631B948F2700D99CF3 /* Plane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plane.m; sourceTree = "<group>"; };
+		32186D651B948F3A00D99CF3 /* PlaneA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaneA.h; sourceTree = "<group>"; };
+		32186D661B948F3A00D99CF3 /* PlaneA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaneA.m; sourceTree = "<group>"; };
+		32186D681B948F4A00D99CF3 /* PlaneB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaneB.h; sourceTree = "<group>"; };
+		32186D691B948F4A00D99CF3 /* PlaneB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaneB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,7 @@
 		32186D2E1B948D3700D99CF3 /* MediatorPatter */ = {
 			isa = PBXGroup;
 			children = (
+				32186D551B948D4500D99CF3 /* Mediator */,
 				32186D331B948D3700D99CF3 /* AppDelegate.h */,
 				32186D341B948D3700D99CF3 /* AppDelegate.m */,
 				32186D361B948D3700D99CF3 /* ViewController.h */,
@@ -117,6 +133,23 @@
 				32186D4A1B948D3700D99CF3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32186D551B948D4500D99CF3 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				32186D621B948F2700D99CF3 /* Plane.h */,
+				32186D631B948F2700D99CF3 /* Plane.m */,
+				32186D651B948F3A00D99CF3 /* PlaneA.h */,
+				32186D661B948F3A00D99CF3 /* PlaneA.m */,
+				32186D681B948F4A00D99CF3 /* PlaneB.h */,
+				32186D691B948F4A00D99CF3 /* PlaneB.m */,
+				32186D5C1B948EF200D99CF3 /* AbstractRadarMediator.h */,
+				32186D5D1B948EF200D99CF3 /* AbstractRadarMediator.m */,
+				32186D5F1B948F1200D99CF3 /* ConcreteRadarMediator.h */,
+				32186D601B948F1200D99CF3 /* ConcreteRadarMediator.m */,
+			);
+			name = Mediator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +252,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32186D641B948F2700D99CF3 /* Plane.m in Sources */,
 				32186D381B948D3700D99CF3 /* ViewController.m in Sources */,
+				32186D5E1B948EF200D99CF3 /* AbstractRadarMediator.m in Sources */,
+				32186D671B948F3A00D99CF3 /* PlaneA.m in Sources */,
 				32186D351B948D3700D99CF3 /* AppDelegate.m in Sources */,
+				32186D6A1B948F4A00D99CF3 /* PlaneB.m in Sources */,
 				32186D321B948D3700D99CF3 /* main.m in Sources */,
+				32186D611B948F1200D99CF3 /* ConcreteRadarMediator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,11 @@
 //
 
 #import "ViewController.h"
-
+#import "Plane.h"
+#import "PlaneA.h"
+#import "PlaneB.h"
+#import "AbstractRadarMediator.h"
+#import "ConcreteRadarMediator.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +20,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    Plane *planeA = [[PlaneA alloc] init];
+    PlaneB *planeB = [[PlaneB alloc] init];
+    AbstractRadarMediator *radarMediator = [[ConcreteRadarMediator alloc] initWithPlaneA:planeA planeB:planeB];
+    planeA.radarMediator = radarMediator;
+    planeB.radarMediator = radarMediator;
+    
+    planeA.distance = 800.0f;
+    planeB.distance = 1000.0f;
+    
+    [planeA noticeLocation];
+    NSLog(@"飞机B收到A的位置通知:%f", planeB.otherPlaneDistance);
+    
+    [planeB noticeLocation];
+    NSLog(@"飞机A收到B的位置通知:%f", planeA.otherPlaneDistance);
+    
 }
 
 - (void)didReceiveMemoryWarning {
