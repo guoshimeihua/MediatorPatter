@@ -11,7 +11,7 @@
 @interface ConcreteRadarMediator : AbstractRadarMediator
 
 // 重写这两个方法
-- (void)noticeLocationToPlaneBWithDistance:(float)distance;
+- (void)noticeLocationToPlaneAWithDistance:(float)distance;
 - (void)noticeLocationToPlaneBWithDistance:(float)distance;
 
 @end

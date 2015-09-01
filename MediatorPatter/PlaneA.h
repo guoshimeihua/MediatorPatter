@@ -10,6 +10,6 @@
 
 @interface PlaneA : Plane
 
-- (void)noticeLocation;
+- (void)noticeLocation; //重写该方法
 
 @end
