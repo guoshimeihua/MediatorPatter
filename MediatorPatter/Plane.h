@@ -15,7 +15,7 @@
 @property (nonatomic, assign) float distance; //距离机场的距离
 @property (nonatomic, assign) float otherPlaneDistance; //其他飞机的位置
 
-@property (nonatomic, strong) AbstractRadarMediator *radarMediator; //保持雷达中介者的引用
+@property (nonatomic, weak) AbstractRadarMediator *radarMediator; //保持雷达中介者的引用
 
 - (void)noticeLocation;
 

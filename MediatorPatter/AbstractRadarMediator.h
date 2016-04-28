@@ -10,8 +10,8 @@
 #import "Plane.h"
 @interface AbstractRadarMediator : NSObject
 
-@property (nonatomic, strong) Plane *planeA;
-@property (nonatomic, strong) Plane *planeB;
+@property (nonatomic, weak) Plane *planeA;
+@property (nonatomic, weak) Plane *planeB;
 
 - (instancetype)initWithPlaneA:(Plane *)planeA planeB:(Plane *)planeB;
 
